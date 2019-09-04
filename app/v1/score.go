@@ -8,7 +8,7 @@ import (
 	"strings"
 
 	"gopkg.in/thehowl/go-osuapi.v1"
-	"zxq.co/ripple/rippleapi/common"
+	"github.com/JustinOsu/rippleapi/common"
 	"zxq.co/x/getrank"
 )
 

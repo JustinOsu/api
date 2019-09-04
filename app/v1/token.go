@@ -11,8 +11,8 @@ import (
 
 	"github.com/jmoiron/sqlx"
 
-	"zxq.co/ripple/rippleapi/common"
-	"zxq.co/ripple/schiavolib"
+	"github.com/JustinOsu/rippleapi/common"
+	"github.com/JustinOsu/schiavolib"
 )
 
 // TokenSelfDeletePOST deletes the token the user is connecting with.

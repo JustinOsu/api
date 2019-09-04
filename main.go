@@ -6,11 +6,11 @@ import (
 	"strings"
 	"syscall"
 
-	"zxq.co/ripple/agplwarning"
-	"zxq.co/ripple/rippleapi/app"
-	"zxq.co/ripple/rippleapi/beatmapget"
-	"zxq.co/ripple/rippleapi/common"
-	"zxq.co/ripple/schiavolib"
+	"github.com/JustinOsu/agplwarning"
+	"github.com/JustinOsu/rippleapi/app"
+	"github.com/JustinOsu/rippleapi/beatmapget"
+	"github.com/JustinOsu/rippleapi/common"
+	"github.com/JustinOsu/schiavolib"
 	// Golint pls dont break balls
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/jmoiron/sqlx"

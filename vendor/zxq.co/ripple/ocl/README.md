@@ -1,1 +1,1 @@
-# ocl [![GoDoc](https://godoc.org/git.zxq.co/ripple/ocl?status.svg)](https://godoc.org/git.zxq.co/ripple/ocl) [![Go Report Card](https://goreportcard.com/badge/git.zxq.co/ripple/ocl)](https://goreportcard.com/report/git.zxq.co/ripple/ocl)
+# ocl [![GoDoc](https://godoc.org/git.github.com/JustinOsu/ocl?status.svg)](https://godoc.org/git.github.com/JustinOsu/ocl) [![Go Report Card](https://goreportcard.com/badge/git.github.com/JustinOsu/ocl)](https://goreportcard.com/report/git.github.com/JustinOsu/ocl)
