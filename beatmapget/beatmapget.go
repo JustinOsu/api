@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/JustinOsu/rippleapi/common"
+	"github.com/JustinOsu/api/common"
 	"github.com/jmoiron/sqlx"
 	"gopkg.in/thehowl/go-osuapi.v1"
 )

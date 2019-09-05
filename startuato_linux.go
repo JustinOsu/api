@@ -10,8 +10,8 @@ import (
 
 	"github.com/rcrowley/goagain"
 	"github.com/valyala/fasthttp"
-	"github.com/JustinOsu/rippleapi/common"
-	"github.com/JustinOsu/schiavolib"
+	"github.com/JustinOsu/api/common"
+	"zxq.co/ripple/schiavolib"
 )
 
 func startuato(hn fasthttp.RequestHandler) {

@@ -6,8 +6,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/JustinOsu/rippleapi/common"
-	"github.com/JustinOsu/rippleapi/limit"
+	"github.com/JustinOsu/api/common"
+	"github.com/JustinOsu/api/limit"
 )
 
 type rankRequestsStatusResponse struct {

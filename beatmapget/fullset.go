@@ -5,7 +5,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/JustinOsu/rippleapi/common"
+	"github.com/JustinOsu/api/common"
 	"gopkg.in/thehowl/go-osuapi.v1"
 )
 

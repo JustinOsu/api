@@ -7,8 +7,8 @@ import (
 	"sync"
 
 	"gopkg.in/thehowl/go-osuapi.v1"
-	"github.com/JustinOsu/rippleapi/app/v1"
-	"github.com/JustinOsu/rippleapi/common"
+	"github.com/JustinOsu/api/app/v1"
+	"github.com/JustinOsu/api/common"
 	"zxq.co/x/getrank"
 )
 
