@@ -1,1 +1,0 @@
-# ocl [![GoDoc](https://godoc.org/git.github.com/JustinOsu/ocl?status.svg)](https://godoc.org/git.github.com/JustinOsu/ocl) [![Go Report Card](https://goreportcard.com/badge/git.github.com/JustinOsu/ocl)](https://goreportcard.com/report/git.github.com/JustinOsu/ocl)

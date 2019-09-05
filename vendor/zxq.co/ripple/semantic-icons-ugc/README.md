@@ -1,1 +1,0 @@
-https://godoc.org/git.github.com/JustinOsu/semantic-icons-ugc
