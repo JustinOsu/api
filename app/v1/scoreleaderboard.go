@@ -10,7 +10,7 @@ import (
 	redis "gopkg.in/redis.v5"
 
 	"zxq.co/ripple/ocl"
-	"zxq.co/ripple/rippleapi/common"
+	"githubcom/JustinOsu/api/common"
 )
 
 type SleaderboardUser struct {
