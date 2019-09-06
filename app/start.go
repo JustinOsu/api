@@ -101,6 +101,7 @@ func Start(conf common.Conf, dbO *sqlx.DB) *fhr.Router {
 		r.Method("/api/v1/badges/members", v1.BadgeMembersGET)
 		r.Method("/api/v1/beatmaps", v1.BeatmapGET)
 		r.Method("/api/v1/leaderboard", v1.LeaderboardGET)
+		r.Method("/api/v1/scoreleaderboard", v1.SLeaderboardGET)
 		r.Method("/api/v1/tokens", v1.TokenGET)
 		r.Method("/api/v1/users/self", v1.UserSelfGET)
 		r.Method("/api/v1/tokens/self", v1.TokenSelfGET)
