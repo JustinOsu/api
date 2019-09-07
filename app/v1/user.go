@@ -196,6 +196,7 @@ type userFullResponse struct {
 	PlayStyle     int                   `json:"play_style"`
 	FavouriteMode int                   `json:"favourite_mode"`
 	Badges        []singleBadge         `json:"badges"`
+	Clan          singleClan            `json:"clan"`
 	CustomBadge   *singleBadge          `json:"custom_badge"`
 	SilenceInfo   silenceInfo           `json:"silence_info"`
 	CMNotes       *string               `json:"cm_notes,omitempty"`
@@ -370,6 +371,22 @@ LIMIT 1
 		r.BanDate = nil
 		r.Email = ""
 	}
+	rows, err = md.DB.Query("SELECT c.id, c.name, c.description, c.tag, c.icon FROM user_clans uc "+
+		"LEFT JOIN clans c ON uc.clan = c.id WHERE user = ?", r.ID)
+	if err != nil {
+		md.Err(err)
+	}
+
+	for rows.Next() {
+		var clan singleClan
+		err = rows.Scan(&clan.ID, &clan.Name, &clan.Description, &clan.Tag, &clan.Icon)
+		if err != nil {
+			md.Err(err)
+			continue
+		}
+		r.Clan = clan
+	}
+
 
 	r.Code = 200
 	return r
