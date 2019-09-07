@@ -17,7 +17,6 @@ const (
 	PrivilegeBlog                         // can do pretty much anything to the blog, and the documentation.
 	PrivilegeAPIMeta                      // can do /meta API calls. basically means they can restart the API server.
 	PrivilegeBeatmap                      // rank/unrank beatmaps. also BAT when implemented
-	PrivilegeBancho									      // can log in to bancho and use the chat through the delta ws api
 )
 
 // Privileges is a bitwise enum of the privileges of an user's API key.
@@ -37,7 +36,6 @@ var privilegeString = [...]string{
 	"Blog",
 	"APIMeta",
 	"Beatmap",
-	"Bancho",
 }
 
 func (p Privileges) String() string {
@@ -64,7 +62,6 @@ var privilegeMustBe = [...]UserPrivileges{
 	AdminPrivilegeChatMod, // temporary?
 	AdminPrivilegeManageServer,
 	AdminPrivilegeAccessRAP | AdminPrivilegeManageBeatmap,
-	UserPrivilegeNormal,
 }
 
 // CanOnly removes any privilege that the user has requested to have, but cannot have due to their rank.
@@ -84,7 +81,6 @@ func (p Privileges) CanOnly(userPrivs UserPrivileges) Privileges {
 var privilegeMap = map[string]Privileges{
 	"read_confidential": PrivilegeReadConfidential,
 	"write":             PrivilegeWrite,
-	"bancho":						 PrivilegeBancho,
 }
 
 // OAuthPrivileges returns the equivalent in Privileges of a space-separated
