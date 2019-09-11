@@ -183,7 +183,7 @@ func AllClanStatsGET(md common.MethodData) common.CodeMessager {
 				r.Clans[i].ChosenMode.PlayCount = r.Clans[i].ChosenMode.PlayCount + members.Members[u].PlaycountMania
 			}
 		}
-		r.Clans[i].ChosenMode.PP = (r.Clans[i].ChosenMode.PP + 1))
+		r.Clans[i].ChosenMode.PP = (r.Clans[i].ChosenMode.PP + 1)
 	}
 
 	sort.Slice(r.Clans, func(i, j int) bool {
@@ -310,7 +310,7 @@ func TotalClanStatsGET(md common.MethodData) common.CodeMessager {
 				r.Clans[i].ChosenMode.TotalHits = r.Clans[i].ChosenMode.TotalHits + members.Members[u].TotalHitsMania
 			}
 		}
-		r.Clans[i].ChosenMode.PP = (r.Clans[i].ChosenMode.PP / (len(members.Members) + 1)
+		r.Clans[i].ChosenMode.PP = (r.Clans[i].ChosenMode.PP + 1)
 	}
 
 	sort.Slice(r.Clans, func(i, j int) bool {
