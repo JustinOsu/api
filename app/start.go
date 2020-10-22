@@ -119,6 +119,12 @@ func Start(conf common.Conf, dbO *sqlx.DB) *fhr.Router {
 		r.Method("/api/v1/enjuu/topdonors", v1.TopDonorsGET)
 		r.Method("/api/v1/users/scores/first", v1.UserFirstGET)
 
+		// Beta Enjuu Stuff
+		r.Method("/api/v1/quests", v1.QuestsGet)
+		r.Method("/api/v1/users/quests", v1.UserQuestsGet)
+		//r.Method("/api/v1/shop/buy_item", v1.BuyItemGet)
+		r.Method("/api/v1/shop", v1.ShopGet)
+
 		// ReadConfidential privilege required
 		r.Method("/api/v1/friends", v1.FriendsGET, common.PrivilegeReadConfidential)
 		r.Method("/api/v1/friends/with", v1.FriendsWithGET, common.PrivilegeReadConfidential)
